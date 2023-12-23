@@ -1,0 +1,14 @@
+name: RepairAnyItem
+version: '${project.version}'
+author: Loscut
+main: loscut.the.maker.plugin.RepairAnyItem
+load: POSTWORLD
+prefix: RAI
+commands:
+  repair:
+    permission: rai.repair
+    permission-message: "You don't have permission to repair things."
+    description: 'Fixes any item in your hand that has less than 100% durability.'
+    aliases:
+      - fix
+softdepend: [Essentials, Vault]
