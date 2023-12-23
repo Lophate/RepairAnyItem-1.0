@@ -10,7 +10,7 @@ public final class RepairAnyItem extends JavaPlugin {
     public void onEnable() {
         getCommand("repair").setExecutor(new commandRepair());
         getServer().getConsoleSender().sendMessage(ChatColor.DARK_GREEN + "[RAI]: Enabled");
-        saveConfig();
+        saveDefaultConfig();
     }
 
     @Override
